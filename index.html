@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#7a1740">
+<title>Para o meu Pretinho ❤️</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,800;1,9..144,400;1,9..144,700&family=Figtree:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="prog"></div>
+<header>
+  <a class="logo" href="#inicio">♥ Nosso Cantinho</a>
+  <button id="menuBtn" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  <nav id="menu"><a href="#recado">Recado</a><a href="#fotos">Fotos</a><a href="#sorte">Cantadas</a><a href="#quiz">Quiz</a><a href="#surpresa">Surpresa</a></nav>
+</header>
+<main>
+<section class="hero" id="inicio" style="padding-top:70px">
+  <div>
+    <h1><em>Para o meu</em>Pretinho</h1>
+    <p>Tem lugares que a gente procura no mapa. O meu lugar favorito no mundo eu encontrei em você.</p>
+  </div>
+</section>
+
+<section id="recado">
+  <h2 class="titulo">Ei, meu amor… 💌</h2>
+  <p class="sub">Uma carta escrita para você ler com calma.</p>
+  <div class="carta" id="carta">
+    <p data-t="Obrigada por dividir comigo os dias bons, os dias corridos e até aquelas pequenas confusões que depois viram história para contar."></p>
+    <p data-t="Você é meu parceiro de risadas, meu carinho favorito e uma das minhas pessoas preferidas no mundo. Nunca se esqueça do quanto é especial para mim."></p>
+    <p class="fecho" data-t="Com amor, sua esposa"></p>
+  </div>
+</section>
+
+<section class="alt" id="fotos">
+  <h2 class="titulo">Nossos momentos</h2>
+  <p class="sub">Toque em uma foto para ver maior.</p>
+  <div class="galeria">
+    <figure><img src="foto1.jpg" alt="Nós dois abraçados" style="object-position:center 45%"><figcaption>Meu lugar favorito é aqui</figcaption></figure>
+    <figure><img src="foto2.jpg" alt="Nós dois com máscara facial" style="object-position:center 30%"><figcaption>Dia de spa e muita risada</figcaption></figure>
+    <figure><img src="foto3.jpg" alt="Mãos formando um coração sobre a barriga" style="object-position:center 40%"><figcaption>O nosso próximo capítulo</figcaption></figure>
+  </div>
+</section>
+
+<section id="sorte">
+  <h2 class="titulo">Cantadas</h2>
+  <p class="sub">Aperte o botão e veja o que sai.</p>
+  <div class="cartas">
+    <div class="card"><h3>Posso te contar uma?</h3><p id="cT">Você não é Wi-Fi, mas quando chega perto meu coração já fica conectado.</p><button class="btn" id="cB">Outra cantada</button></div>
+    <div class="card"><h3>Recados salientes</h3><p id="pT">Eu não sou Wi-Fi, mas aposto que a gente se conecta muito bem de pertinho.</p><button class="btn" id="pB">Outro recado</button></div>
+  </div>
+</section>
+
+<section class="alt" id="quiz">
+  <h2 class="titulo">Quiz do nosso amor</h2>
+  <div class="quiz">
+    <p class="q">Qual é meu programa favorito quando quero ficar pertinho de você?</p>
+    <button class="op" data-ok="1">Assistir algo juntinhos</button><button class="op">Dar uma volta sem destino</button><button class="op">Comer alguma coisa gostosa</button>
+    <p id="qr" aria-live="polite">Essa é fácil</p>
+  </div>
+</section>
+
+<section class="surp" id="surpresa">
+  <h2 class="titulo">Toque no coração</h2>
+  <p class="sub">Tem uma mensagem especial esperando por você.</p>
+  <button id="cor" aria-label="Revelar a mensagem surpresa"><svg viewBox="0 0 32 29"><path d="M16 28.5C6 21 0 15.5 0 9 0 4 3.8.5 8.4.5 11.6.5 14.5 2.3 16 5 17.5 2.3 20.4.5 23.6.5 28.2.5 32 4 32 9c0 6.500-6 12-16 19.500z"/></svg></button>
+  <div id="msg" hidden><h3>Você é muito especial!</h3><p id="mT">Que a gente nunca perca a vontade de cuidar um do outro, rir das pequenas coisas e criar novas lembranças. Obrigada por fazer parte da minha história.</p><button class="btn" id="mB">Quero outra mensagem</button></div>
+</section>
+</main>
+<footer>Feito com amor para o meu Pretinho<br>Um cantinho nosso.</footer>
+<div id="lb" role="dialog" aria-label="Foto ampliada"><img alt=""></div>
+
+<script src="script.js"></script>
+</body>
+</html>
