@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#b51f45">
+  <title>Para o Meu Pretinho ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topo">
+    <a class="logo" href="#inicio">♥ Nosso Cantinho</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav id="menu">
+      <a href="#recadinho">Recadinho</a><a href="#fotos">Nossas fotos</a>
+      <a href="#cantadas">Cantadas</a><a href="#risadas">Piadas</a>
+      <a href="#quiz">Quiz</a><a href="#surpresa">Surpresa</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="coracoes" aria-hidden="true">♥　♡　♥　♡　♥</div>
+      <p class="sobretitulo">Uma página feita com carinho</p>
+      <h1>Para o meu<br><span>Pretinho</span> ❤️</h1>
+      <p class="intro">Um cantinho só seu, cheio de carinho, lembranças, risadas e surpresas.</p>
+      <a class="botao" href="#recadinho">Abrir minha surpresa</a>
+      <div class="assinatura">Com carinho, de quem adora você ♥</div>
+    </section>
+
+    <section class="secao" id="recadinho">
+      <p class="etiqueta">UM RECADO DO CORAÇÃO</p><h2>Ei, meu amor… 💌</h2>
+      <div class="carta">
+        <p>Se eu pudesse escolher de novo, ainda escolheria ter você na minha vida. Obrigada por dividir comigo os dias bons, os dias corridos e até aquelas pequenas confusões que depois viram história para contar.</p>
+        <p>Você é meu parceiro de risadas, meu carinho favorito e uma das minhas pessoas preferidas no mundo. Nunca se esqueça do quanto é especial para mim. ❤️</p>
+        <p class="fecho">Com amor, sempre. 💋</p>
+      </div>
+    </section>
+
+    <section class="secao fundo-claro" id="fotos">
+      <p class="etiqueta">LEMBRANÇAS ESPECIAIS</p><h2>Nossos momentos 📸</h2>
+      <p class="subtexto">Troque estas imagens pelas fotos de vocês. Basta colocar suas fotos na mesma pasta dos arquivos e ajustar os nomes no HTML.</p>
+      <div class="galeria">
+        <figure><img src="foto1.jpg" alt="Adicione aqui uma foto de vocês" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><div class="foto-vazia">📷<span>Adicione foto 1</span></div><figcaption>Um momento para guardar ♥</figcaption></figure>
+        <figure><img src="foto2.jpg" alt="Adicione aqui outra foto de vocês" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><div class="foto-vazia">📷<span>Adicione foto 2</span></div><figcaption>Uma lembrança especial ♥</figcaption></figure>
+        <figure><img src="foto3.jpg" alt="Adicione aqui mais uma foto de vocês" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><div class="foto-vazia">📷<span>Adicione foto 3</span></div><figcaption>Mais um capítulo nosso ♥</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="secao" id="cantadas">
+      <p class="etiqueta">CANTADAS NEM TÃO DISCRETAS</p><h2>Posso te contar uma? 😉</h2>
+      <div class="cartao-frase"><span class="emoji">😘</span><p id="cantadaTexto">Você não é Wi-Fi, mas quando chega perto meu coração já fica conectado.</p><button class="botao" id="novaCantada">Outra cantada</button></div>
+    </section>
+
+    <section class="secao fundo-claro" id="risadas">
+      <p class="etiqueta">HORA DE RIR</p><h2>Piadas para o meu favorito 😂</h2>
+      <div class="cartao-frase"><span class="emoji">🤣</span><p id="piadaTexto">Qual é o cúmulo do romantismo? Mandar mensagem dizendo “cheguei” mesmo estando no sofá, só para você não ficar com saudade.</p><button class="botao" id="novaPiada">Me faz rir de novo</button></div>
+    </section>
+
+    <section class="secao" id="quiz">
+      <p class="etiqueta">SERÁ QUE VOCÊ ME CONHECE?</p><h2>Quiz do nosso amor 💗</h2>
+      <div class="quiz-box"><p class="pergunta">Qual é meu programa favorito quando quero ficar pertinho de você?</p>
+        <div class="opcoes"><button class="opcao">Assistir algo juntinhos</button><button class="opcao">Dar uma volta sem destino</button><button class="opcao">Comer alguma coisa gostosa</button></div>
+        <p id="quizResultado" class="resultado" aria-live="polite">Escolha uma resposta! (Todas podem valer, viu? 😄)</p>
+      </div>
+    </section>
+
+    <section class="secao fundo-claro" id="surpresa">
+      <p class="etiqueta">UMA SURPRESA ESCONDIDA</p><h2>Toque no coração ❤️</h2>
+      <p class="subtexto">Tem uma mensagem especial esperando por você.</p>
+      <button class="coracao-surpresa" id="coracaoSurpresa" aria-label="Revelar mensagem surpresa">♥</button>
+      <div id="mensagemSecreta" class="mensagem-secreta" hidden>
+        <h3>Você é muito especial! 💌</h3>
+        <p>Que a gente nunca perca a vontade de cuidar um do outro, rir das pequenas coisas e criar novas lembranças. Obrigada por fazer parte da minha história. ❤️</p>
+      </div>
+    </section>
+
+    <section class="secao" id="mensagens">
+      <p class="etiqueta">UM MIMO PARA VOCÊ</p><h2>Abra quando quiser um carinho 🎁</h2>
+      <div class="surpresa-box"><div class="presente">💝</div><p id="surpresaTexto">Tem alguém aqui que torce por você, acredita em você e fica feliz só de lembrar que tem você por perto.</p><button class="botao" id="abrirSurpresa">Quero outra mensagem</button></div>
+    </section>
+  </main>
+  <footer>Feito com amor para o meu Pretinho <span>♥</span><br><small>Um cantinho nosso, para guardar sorrisos.</small></footer>
+  <script src="script.js"></script>
+</body>
+</html>
